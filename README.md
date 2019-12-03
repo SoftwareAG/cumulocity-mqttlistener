@@ -61,6 +61,14 @@ Additional information are in the documentation.
 
 ["Microservice"](https://cumulocity.com/guides/microservice-sdk/http/)
 
+## Run the application
+In order to debug and run the code offline you can simply start the service.py via
+
+```
+python service.py
+```
+within the docker directory.
+
 ## Data structure
 
 The idea of this datastructure is that a machine is sending all its data in a topic payload principle without taking care of the cumulocity domain model. This is for very rapid prototyping interesting in order to leave the mapping on a microservice. On top of that it is much easier to connect a machine to a MQTT Broker.
