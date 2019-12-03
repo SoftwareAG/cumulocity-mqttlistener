@@ -1,5 +1,5 @@
 # Cumulocity Example for listening on a MQTT Broker
-This is an example for listening on a MQTT Broker where machine data comes in. The messages on special topics will be parsed an translatet to the cumulcoity domain model.
+This is an example for listening on a MQTT Broker where machine data comes in. The messages on special topics will be parsed and translatet to the cumulcoity domain model.
 
 See the [Domain model](https://cumulocity.com/guides/concepts/domain-model/) for further infos.
 
@@ -109,6 +109,7 @@ A message for Status might thus look like:
 
 which indicated that the machine is in the state "Werkzeugwechsel".
 
+This will than be shown as an Event with the Code 2 and the text "Werkzeugwechsel" on the device. This can later be used e.g. in Apama.
 
 ## Code structure
 
